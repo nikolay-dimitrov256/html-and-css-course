@@ -1,0 +1,40 @@
+html {
+    font-family: Helvetica, sans-seri;
+}
+
+body {
+    font-family: inherit;
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+    padding: 2em;
+}
+
+article, aside {
+    display: inline-block;
+}
+
+article {
+    width: 75%;
+    padding-right: 2em;
+}
+
+aside {
+    float: right;
+    width: 20%;
+}
+
+footer {
+    margin-top: 3em;
+}
+
+.title, h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+img {
+    width: 70%;
+    height: auto;
+}
