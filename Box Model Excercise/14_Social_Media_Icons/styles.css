@@ -1,0 +1,45 @@
+ul {
+    display: inline-block;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-inline: 0.5em;
+}
+
+a {
+    display: inline-block;
+}
+
+svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #ccc;
+    padding: 1em;
+    border-radius: 50%;
+    fill: rgb(55, 55, 55);
+    transition: fill 0.3s ease-in;
+}
+
+svg.facebook:hover {
+    fill: #3b5998;
+}
+
+svg.twitter:hover {
+    fill: #00aced;
+}
+
+svg.google-plus:hover {
+    fill: #dd4b39;
+}
+
+svg.linked-in:hover {
+    fill: #007bb6;
+}
+
+svg.instagram:hover {
+    fill: #517fa4;
+}
