@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+}
+
+.container {
+    max-width: 65vw;
+    height: 50vh;
+    display: flex;
+}
+
+.container section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container span {
+    border: 1px solid #000;
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+section.week {
+    flex: 0 1 80%;
+}
+
+section.notes {
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+section.week .title {
+    flex: 1 0 100%;
+}

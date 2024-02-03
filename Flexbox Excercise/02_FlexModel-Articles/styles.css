@@ -1,0 +1,19 @@
+html {
+    font: 16px/1.5 Helvetica, sans-serif;
+}
+
+section {
+    display: flex;
+    max-width: 70vw;
+    justify-content: space-between;
+}
+
+section article {
+    flex: 0 1 200px;
+}
+
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
