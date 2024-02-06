@@ -47,6 +47,7 @@ h1, h2, h3 {
     overflow: hidden;
     box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.3);
     background-color: #fff;
+    position: relative;
 }
 
 .card section {
@@ -56,6 +57,18 @@ h1, h2, h3 {
 .card footer {
     border-top: 1px solid #a3a3a3;
     padding: 1em;
+}
+
+.card::before {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.card:hover::before {
+    opacity: 0;
 }
 
 /* .card::before {
