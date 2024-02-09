@@ -35,13 +35,14 @@ img {
 }
 
 .container main {
-    flex: 1 0 65%;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
 .container aside {
+    flex: 0 1 30%;
     width: 100%;
     display: flex;
     flex-direction: column;
