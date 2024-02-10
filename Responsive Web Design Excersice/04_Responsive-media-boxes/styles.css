@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    padding: 3em;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+}
+
+h1 {
+    font: 1em/1.2 Georgia, serif;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    border-radius: 0.3em;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in;
+}
+
+.content {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.button {
+    background-color: rgb(0, 153, 0);
+    align-self: flex-end;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.3em;
+    box-shadow: -0.2em -0.5em 1em 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+.picture {
+    position: relative;
+}
+
+.picture::before {
+    display: block;
+    content: '';
+    inset: 0;
+    position: absolute;
+    box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.5) inset;
+    transition: opacity 0.2s ease-in;
+}
+
+.card:hover {
+    background-color: #ebf8f7;
+}
+
+.card:hover .picture::before {
+    opacity: 0;
+}
+
+.button:hover {
+    box-shadow: none;
+    text-decoration: underline;
+}
