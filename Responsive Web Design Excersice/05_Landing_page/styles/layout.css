@@ -1,0 +1,214 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1em;
+}
+
+input, label {
+    display: none;
+}
+
+.page-header {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+
+.page-header nav {
+    flex: 0 1 40%;
+}
+
+.page-header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.introduction {
+    width: 60%;
+    display: flex;
+    margin-bottom: 5em;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.introduction .description {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.our-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    width: 75%;
+}
+
+.card {
+    width: 30%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > * {
+    padding-bottom: 1.5em;
+}
+
+.card .name {
+    padding-bottom: 0.2em;
+}
+
+.card p {
+    text-align: center;
+}
+
+.sign-up {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    padding-block: 2em;
+    margin-top: 4em;
+}
+
+.sign-up .subscribe {
+    display: flex;
+    gap: 0.5em;
+}
+
+.testimonials {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding-bottom: 5em;
+}
+
+footer {
+    width: 75%;
+    margin-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+footer > * {
+    flex-basis: 100%;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1500px) {
+    .page-header, .cards, footer {
+        width: 95%;
+    }
+
+    .introduction {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .page-header nav {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
+    .page-header, .cards, footer, .introduction {
+        width: 95%;
+    }
+
+    .cards {
+        gap: 1em;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    footer .sitemap {
+        width: 75%;
+        align-self: flex-start;
+    }
+
+    .page-header nav {
+        display: none;
+    }
+
+    .page-header .header-inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    label {
+        display: block;
+    }
+
+    #nav-toggle:checked + .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav-toggle:checked + .page-header .header-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nav-toggle:checked + .page-header nav {
+        display: block;
+        align-self: stretch;
+        margin-top: 2em;
+    }
+
+    #nav-toggle:checked + .page-header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-header nav ul a {
+        padding: 0.5em 1em;
+    }
+    
+    #nav-toggle:checked + .page-header nav ul li {
+        padding: 0.5em 1em;
+    }
+}

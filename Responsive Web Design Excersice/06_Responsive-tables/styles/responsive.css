@@ -1,0 +1,28 @@
+@media (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    table, tbody, thead, tr, td, th {
+        display: block;
+
+    }
+
+    thead {display: none;}
+
+    tbody td {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    tbody td:before {
+        display: inline-block;
+        content: attr(data-title);
+        padding-right: 1em;
+        font-weight: bold;
+        /* width: 80px; */
+        flex: 0 0 80px;
+    }
+}

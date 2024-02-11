@@ -1,0 +1,11 @@
+.introduction .image svg {
+    width: 10em;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .introduction .image svg {
+        width: 8em;
+        height: auto;
+    }
+}
