@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Inter, sans-serif;
+}
+
+body {
+    font: inherit;
+    padding: 2em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    background-color: #85DCFF;
+    padding: 72px 33px 72px 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.container main .buttons {
+    display: flex;
+    gap: 1em;
+}
+
+.container main .button {
+    display: block;
+    padding: 1em 2em;
+    border-radius: 0.3em;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.container main .button:first-child {
+    background-color: #42AA59;
+    border: 1px solid #000;
+}
+
+.container main .button:first-child:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+aside figure {
+    width: 360px;
+    box-shadow: 0.3em 0.3em 0.5em 0.1em rgba(0, 0, 0, 0.8);
+}

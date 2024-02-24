@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 18px/1.5 Karla, sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote {
+    font-family: 'Cormorant Infant', serif;
+}
+
+h3 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 110px;
+    height: 70px;
+    text-indent: -200vw;
+    background-image: url('images/logo.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.site-header {
+    padding: 1.8em 5.5em;
+    background-color: #134A69;
+    color: #fff;
+    background-image: url('images/poster.jpg');
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.site-header::before {
+    display: block;
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.site-header header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header header ul {
+    display: flex;
+    gap: 2em;
+}
+
+.site-header header li {
+    list-style: none outside;
+}
+
+.site-header header li a {
+    text-decoration: none;
+    padding: 0.5em;
+    color: #fff;
+    font-size: 22px;
+}
+
+.site-header .container h2 {
+    font-size: 90px;
+    padding-top: 2em;
+}
+
+.site-header .container p {
+    padding-block: 6em;
+    font-size: 22px;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #F8F0E9;
+}
+
+.testimonial .container {
+    margin: 0 auto;
+    max-width: 1150px;
+    gap: 3em;
+    padding: 3em 0 8em 0;
+}
+
+.testimonial p {
+    align-self: flex-start;
+    font-size: 22px;
+}
+
+.testimonial blockquote {
+    font-size: 80px;
+    line-height: 0.9;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.support {
+    background-color: #E14747;
+    color: #fff;
+}
+
+.support .container {
+    gap: 3em;
+    padding-block: 5em;
+}
+
+.support p {
+    font-size: 22px;
+}
+
+.support p:first-child {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.motivational {
+    background-color: #F8F0E9;
+    padding-block: 4em;
+}
+
+.motivational .container {
+    max-width: 625px;
+    margin: 0 auto;
+    gap: 4em;
+}
+
+.motivational .button {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0.2em;
+    background-color: #fff;
+    padding: 0.3em 1em;
+}
+
+.motivational .container .button:first-of-type {
+    align-self: flex-start;
+}
+
+.motivational p {
+    font-size: 22px;
+}
+
+.find-guide {
+    background-color: #E14747;
+    color: #fff;
+}
+
+.find-guide .container {
+    gap: 5em;
+    padding-block: 5em;
+}
+
+.find-guide p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.find-guide .button {
+    text-decoration: none;
+    color: #000;
+    background-color: #FAD87A;
+    padding: 0.8em 1.5em;
+    border-radius: 3em;
+}
+
+footer {
+    background-color: #352B2A;
+    color: #fff;
+}
+
+footer .container {
+    align-items: flex-start;
+    padding: 4em 8em;
+    gap: 1em;
+}
+
+footer .logo {
+    width: 72px;
+    height: 42px;
+    margin-bottom: 2em;
+}
+
+footer .copywright {
+    color: #766968;
+    font-size: 15px;
+}
