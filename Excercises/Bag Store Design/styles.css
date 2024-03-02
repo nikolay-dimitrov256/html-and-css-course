@@ -1,0 +1,235 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*, 
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+
+body {
+    font: inherit;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A1A18;
+    padding: 1em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.site {
+    max-width: 1000px;
+    background-color: #181818;
+    box-shadow: 0 0 5em 0 rgba(255, 247, 68, 0.5);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: radial-gradient(at bottom, #6b6838, #181818);
+    background-repeat: no-repeat;
+}
+
+.site .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em;
+    
+    & nav ul {
+        display: flex;
+        gap: 2em;
+        
+        & li {
+            display: block;
+        }
+        
+        & a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding-block: 0.5em;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+        & .brand {
+            font-weight: bold;
+        }
+    }
+    
+    & .icons {
+        display: flex;
+        gap: 1.5em;
+        
+        a {
+            display: block;
+            color: #fff;
+            /* padding: 0.5em; */
+            
+        }
+        
+        i {
+            font-size: 1.2em;
+        }
+        
+        .basket {
+            display: flex;
+            gap: 3px;
+        }
+        
+        .basket span {
+            display: block;
+            align-self: center;
+            color: #000;
+            background-color: yellow;
+            width: 1.5em;
+            height: 1.5em;
+            font-size: 8px;
+            text-align: center;
+            border-radius: 50%;
+            overflow: visible;
+        }
+    }
+}
+
+.site section {
+    /* flex-grow: 1; */
+    padding: 1em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8em;
+    
+    & h2 {
+        font: 6.5em/1.1 Kodchasan;
+        text-transform: uppercase;
+        font-weight: 700;
+        position: relative;
+        top: 0.5em;
+        
+        & span {
+            color: yellow;
+        }
+    }
+}
+
+.site section .inner {
+    display: flex;
+    gap: 2em;
+    
+    & .left {
+        flex: 1 0 35%;
+    }
+    
+    & main {
+        padding-top: 5em;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        
+        & p {
+            text-align: justify;
+        }
+        
+        & .button {
+            align-self: flex-start;
+            color: #000;
+            background-color: yellow;
+            text-decoration: none;
+            padding: 0.3em 1em;
+            font-weight: bold;
+            border-radius: 0.4em;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+        & .checks ul {
+            align-self: flex-start;
+            display: flex;
+            gap: 1em;
+            flex-wrap: wrap;
+            
+            & li {
+                display: block;
+            }
+        }
+    }
+    
+    & .right {
+        flex: 1 0 20%;
+        position: relative;
+        top: 3em;
+        
+        & figure:nth-child(2) {
+            position: relative;
+            top: -1.5em;
+            left: -3em;
+        }
+    }
+    
+    & figure {
+        border-radius: 1em;
+        overflow: hidden;
+    }
+}
+
+.site .site-footer {
+    background-color: yellow;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.25em;
+    position: relative;
+    bottom: 3em;
+    padding-block: 0.5em;
+    
+    & .scrolling-container {
+        display: flex;
+        gap: 1.5em;
+        transform: translateX(100%);
+        animation: my-animation 15s linear infinite;
+
+        & p {
+            display: inline-block;
+            white-space: nowrap;
+        }
+        
+        & p::after {
+            display: inline-block;
+            content: '\2022';
+            white-space: nowrap;
+            margin-left: 1.5em;
+        }
+    }
+}
+
+@-webkit-keyframes my-animation {
+    from {
+        transform: translateX(100%);
+    }
+    
+    to {
+        transform: translateX(-100%);
+    }
+}
